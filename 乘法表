@@ -1,0 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+int main()
+{
+	int a = 1, z=0;
+	
+				for (a = 1; a < 10; a++)
+			{	
+				z = 1 * a;
+				printf("1 x %d=%d\n", a, z);
+					}
+				for (a = 1; a < 10; a++)
+				{
+					z = 2 * a;
+					printf("2 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 3 * a;
+					printf("3 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 4 * a;
+					printf("4 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 5 * a;
+					printf("5 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 6 * a;
+					printf("6 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 7 * a;
+					printf("7 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 8 * a;
+					printf("8 x %d=%d\n", a, z);
+				}
+				for (a = 1; a < 10; a++)
+				{
+					z = 9 * a;
+					printf("9 x %d=%d\n", a, z);
+				}
+				
+	return 0;
+}
