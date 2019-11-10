@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int m;
+	for (m = 1000; m < 2001; m++)
+	{
+		if (m%4==0)
+			printf("%d年是闰年\n", m);
+		else
+			printf("%d年不是闰年\n", m);
+	}
+	return 0;
+}
