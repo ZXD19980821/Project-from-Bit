@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int a = 10;
+	int b = 15;
+	int c = 0;  /*临时变量*/
+	c = a;    /*c=10*/
+	a = b;   /*a=15*/
+	b = c;   /*b=10*/
+	printf("a=%d\nb=%d\n", a, b);
+	return 0;
+}
