@@ -1,0 +1,35 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int a[3];
+	int b[3];
+	int c[3];
+	int x,y,z;
+	printf(" 请输入三个整数保存在数组a中\n");
+	for (x = 0; x<3; x++)
+	{
+		scanf("%d", &a[x]);
+	}
+	printf(" 请输入三个整数保存在数组b中\n");
+	for (y = 0; y<3; y++)
+	{
+		scanf("%d", &b[y]);
+	}
+	for (z = 0; z<3; ++z)
+	{
+		c[z] = a[z];
+		}
+	for (z = 0; z<3; ++z)
+	{
+		a[z] = b[z];
+		printf("%d\n", a[z]);
+	}
+	for (z = 0; z<3; ++z)
+	{
+		b[z] = c[z];
+		printf("%d\n", b[z]);
+	}
+	
+	return 0;
+}
