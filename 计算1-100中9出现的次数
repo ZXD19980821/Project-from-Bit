@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+int count()                                      /*创建一个计数器函数count来记录9出现的次数*/
+{
+	int count = 0;
+	for (int i = 1; i < 100; i++)
+	{
+		if ((i % 10 == 9))                          /*当个位有9时进行一次计数*/
+			count += 1;
+		if (i / 10 == 9)                             /*当十位有9时进行一次计数*/
+			count += 1;
+	}
+	return count;
+}
+int main()
+{
+	printf("数字9出现的次数 %d \n", count());
+	return 0;
+}
