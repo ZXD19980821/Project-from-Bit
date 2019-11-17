@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int a = 0;                           /*定义a为分母*/
+	float b = 1;                         /*定义b为分子*/
+		float sum = 0;
+	for (a = 1; a <= 100; a++)
+	{
+		sum += b / a;
+		b = 0 - b;                       /*每次计算后，使b变为相反值以改变符号*/
+	}
+	printf("%f\n", sum);
+	return 0;
+}
