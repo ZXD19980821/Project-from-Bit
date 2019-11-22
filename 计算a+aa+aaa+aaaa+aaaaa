@@ -1,0 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int x = 0;
+	int a, b, c, d, e;
+	int Sn;
+	printf("请输入一个0~9之间的整数\n");
+	scanf("%d", &x);
+	a = x;
+	b = 10 * x + x;
+	c = 100*x+10*x+x;
+	d = 1000*x+100*x+10*x+x;
+	e = 10000*x+1000*x+100*x+10*x+x;
+		Sn = a + b + c + d + e;
+	printf("Sn = %d", Sn);
+	return 0;
+}
