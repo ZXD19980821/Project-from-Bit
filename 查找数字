@@ -1,0 +1,40 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int search(int arr[], int m, int left, int light)
+{
+	while (left <= light)
+	{
+		int mid = left + (light - left) / 2;
+
+		if (arr[mid] > m)
+		{
+			light = mid - 1;
+		}
+		if (arr[mid] < m)
+		{
+			left = mid + 1;
+		}
+		if (arr[mid] == m)
+		{
+			return mid;
+		}
+	}
+	return -1;
+}
+
+int main()
+{
+	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+	int m = 0;
+	printf("请输入要找的数:");
+	scanf("%d", &m);
+	int ret = search(arr, m, 0, 9);
+	if (ret == -1)
+	{
+		printf("没有找到目标数\n");
+	}
+	else
+	{
+		printf("已找到目标数字，位置为：%d\n", ret);
+	}
+}
