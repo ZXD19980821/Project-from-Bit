@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	 int password;
+	 int i;
+	 printf("请输入密码，有至多三次机会\n");
+	 for (i = 1; i <= 3; i++)
+	 {
+		 printf("请输入密码:");
+		 scanf("%d", &password);
+		 if (password == 000000)
+		 {
+			 break;
+		 }
+		 printf("error!please input again!");
+	 }
+	 printf("密码正确\n");
+	 return 0;
+ }
