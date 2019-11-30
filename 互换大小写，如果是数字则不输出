@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	char c;
+	int t;
+	while ((c = getchar()) != EOF)                 /*EOF为验证是否输入完毕*/
+	{   
+		if (c >= 'a'&&c <= 'z')
+		{
+			t = c - 32;
+			putchar(t);
+		}
+		else if (c >= 'A'&&c <= 'Z')
+		{
+			t = c + 32;
+			putchar(t);
+		}
+		else 
+		    break;
+	}
+}
