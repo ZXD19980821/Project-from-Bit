@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+int judge(int year)
+{
+	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+		return 1;
+	else
+		return 0;
+	
+}
+int main()
+{
+	int year = 0;
+	int ret = 0;
+	printf("请输入年份\n");
+	scanf("%d", &year);
+	judge(year);
+	ret= judge(year);
+	if (ret == 1)
+	{
+		printf("%d是闰年", year);
+	}
+	else
+	{
+		printf("%d不是闰年", year);
+	}
+	return 0;
+}
